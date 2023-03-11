@@ -5,21 +5,21 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Fanout", "Fanout", "{A1BEA0D1-2E12-403F-9C79-496BB4F4FF65}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FanoutPublisher", "src\FanoutPublisher\FanoutPublisher.csproj", "{472E7689-C28D-48C6-838A-8D19AE4ECBB7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FanoutPublisher", "src\exchange\Fanout\FanoutPublisher\FanoutPublisher.csproj", "{472E7689-C28D-48C6-838A-8D19AE4ECBB7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FanoutConsumer", "src\FanoutConsumer\FanoutConsumer.csproj", "{A0D851C7-4CEE-4045-A542-38846C496FF2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FanoutConsumer", "src\exchange\Fanout\FanoutConsumer\FanoutConsumer.csproj", "{A0D851C7-4CEE-4045-A542-38846C496FF2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Direct", "Direct", "{2CCE3AF7-EA5F-4A82-B214-9069E10C21C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectConsumer", "src\DirectConsumer\DirectConsumer.csproj", "{9036AF61-13BB-4A2A-A051-A567713256BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DirectConsumer", "src\exchange\Direct\DirectConsumer\DirectConsumer.csproj", "{9036AF61-13BB-4A2A-A051-A567713256BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectPublisher", "src\DirectPublisher\DirectPublisher.csproj", "{D5DA85BA-78E5-4BD4-BD84-28EE0AA7D909}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DirectPublisher", "src\exchange\Direct\DirectPublisher\DirectPublisher.csproj", "{D5DA85BA-78E5-4BD4-BD84-28EE0AA7D909}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Topic", "Topic", "{39E2D799-CD78-4D98-BB24-7BBC25065070}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopicPublisher", "src\TopicPublisher\TopicPublisher.csproj", "{08D3036A-0B31-4818-A1FB-AC234AE0CC8E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TopicPublisher", "src\exchange\Topic\TopicPublisher\TopicPublisher.csproj", "{08D3036A-0B31-4818-A1FB-AC234AE0CC8E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopicConsumer", "src\TopicConsumer\TopicConsumer.csproj", "{C7B9FADD-1BEC-40AE-AF4B-CDBA91F6615B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TopicConsumer", "src\exchange\Topic\TopicConsumer\TopicConsumer.csproj", "{C7B9FADD-1BEC-40AE-AF4B-CDBA91F6615B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BCD2E59D-E22B-4C73-A36E-1B9905144B77}"
 	ProjectSection(SolutionItems) = preProject
@@ -38,9 +38,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{AC5307
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Header", "Header", "{B7A96B2B-D290-4A26-8379-DC534D14817B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeaderConsumer", "src\HeaderConsumer\HeaderConsumer.csproj", "{9B9288E5-F7B3-4E2C-8D11-7CB26F67E0C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HeaderConsumer", "src\exchange\Header\HeaderConsumer\HeaderConsumer.csproj", "{9B9288E5-F7B3-4E2C-8D11-7CB26F67E0C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeaderPublisher", "src\HeaderPublisher\HeaderPublisher.csproj", "{74CF67C5-A463-4F39-BBA6-E5D539FAE77C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HeaderPublisher", "src\exchange\Header\HeaderPublisher\HeaderPublisher.csproj", "{74CF67C5-A463-4F39-BBA6-E5D539FAE77C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scenario", "Scenario", "{57C084CD-6F90-44B3-B714-F3A972D28592}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Publish-Subscribe", "Publish-Subscribe", "{174124B5-7CC4-4B86-B7CE-61A02A45B63B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderApi", "src\scenario\Publish-Subscribe\OrderApi\OrderApi.csproj", "{FED469C6-A503-4295-BC55-F007EF9BB879}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mailer", "src\scenario\Publish-Subscribe\Mailer\Mailer.csproj", "{CA403B21-5BF3-4C5C-85C8-703FA23382EC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Auditor", "src\scenario\Publish-Subscribe\Auditor\Auditor.csproj", "{8F377C8A-67D8-4B30-BC5D-A1BFC7C63648}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Request-Response", "Request-Response", "{849DAB0E-54C2-42FC-A421-DAFF1D50AC4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Requestor", "src\scenario\Request-Response\Requestor\Requestor.csproj", "{B9F75B34-CD92-4D1C-AD99-DD3FEA9A0099}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Responser", "src\scenario\Request-Response\Responser\Responser.csproj", "{89736C6F-52DD-47D7-B16D-4E1D62DA06ED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -80,6 +96,26 @@ Global
 		{74CF67C5-A463-4F39-BBA6-E5D539FAE77C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74CF67C5-A463-4F39-BBA6-E5D539FAE77C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74CF67C5-A463-4F39-BBA6-E5D539FAE77C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FED469C6-A503-4295-BC55-F007EF9BB879}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FED469C6-A503-4295-BC55-F007EF9BB879}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FED469C6-A503-4295-BC55-F007EF9BB879}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FED469C6-A503-4295-BC55-F007EF9BB879}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA403B21-5BF3-4C5C-85C8-703FA23382EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA403B21-5BF3-4C5C-85C8-703FA23382EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA403B21-5BF3-4C5C-85C8-703FA23382EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA403B21-5BF3-4C5C-85C8-703FA23382EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F377C8A-67D8-4B30-BC5D-A1BFC7C63648}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F377C8A-67D8-4B30-BC5D-A1BFC7C63648}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F377C8A-67D8-4B30-BC5D-A1BFC7C63648}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F377C8A-67D8-4B30-BC5D-A1BFC7C63648}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9F75B34-CD92-4D1C-AD99-DD3FEA9A0099}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9F75B34-CD92-4D1C-AD99-DD3FEA9A0099}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9F75B34-CD92-4D1C-AD99-DD3FEA9A0099}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9F75B34-CD92-4D1C-AD99-DD3FEA9A0099}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89736C6F-52DD-47D7-B16D-4E1D62DA06ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89736C6F-52DD-47D7-B16D-4E1D62DA06ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89736C6F-52DD-47D7-B16D-4E1D62DA06ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89736C6F-52DD-47D7-B16D-4E1D62DA06ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -98,6 +134,13 @@ Global
 		{B7A96B2B-D290-4A26-8379-DC534D14817B} = {8CCDF67B-5ADA-4D3E-950D-0A78B2DAF46E}
 		{9B9288E5-F7B3-4E2C-8D11-7CB26F67E0C7} = {B7A96B2B-D290-4A26-8379-DC534D14817B}
 		{74CF67C5-A463-4F39-BBA6-E5D539FAE77C} = {B7A96B2B-D290-4A26-8379-DC534D14817B}
+		{174124B5-7CC4-4B86-B7CE-61A02A45B63B} = {57C084CD-6F90-44B3-B714-F3A972D28592}
+		{FED469C6-A503-4295-BC55-F007EF9BB879} = {174124B5-7CC4-4B86-B7CE-61A02A45B63B}
+		{CA403B21-5BF3-4C5C-85C8-703FA23382EC} = {174124B5-7CC4-4B86-B7CE-61A02A45B63B}
+		{8F377C8A-67D8-4B30-BC5D-A1BFC7C63648} = {174124B5-7CC4-4B86-B7CE-61A02A45B63B}
+		{849DAB0E-54C2-42FC-A421-DAFF1D50AC4C} = {57C084CD-6F90-44B3-B714-F3A972D28592}
+		{B9F75B34-CD92-4D1C-AD99-DD3FEA9A0099} = {849DAB0E-54C2-42FC-A421-DAFF1D50AC4C}
+		{89736C6F-52DD-47D7-B16D-4E1D62DA06ED} = {849DAB0E-54C2-42FC-A421-DAFF1D50AC4C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {432E7A84-15F4-4212-B815-075A32F6048F}

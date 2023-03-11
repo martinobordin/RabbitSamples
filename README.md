@@ -41,3 +41,19 @@
 
 
 ![Header](images/header.png "Header")
+
+## Scenario
+
+### Publish-Subscribe
+- Publish-subscribe pattern is used to deliver the same message to one or more subscribers.
+- There is one queue for each subscriber.
+- Mostly used for event notifications.
+
+![Publish-Subscribe](images/publish-subscribe.png "Publish-Subscribe")
+
+### Request-Response (RPC)
+- Used when the publisher of the message (requestor) needs to get the response for its message.
+- There are two queues: 1 for the requests, 1 for the responses
+- Mostly used for command\queries 
+
+![Request-Response](images/request-response.png "Request-Response")
