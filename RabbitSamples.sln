@@ -5,21 +5,21 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Fanout", "Fanout", "{A1BEA0D1-2E12-403F-9C79-496BB4F4FF65}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FanoutPublisher", "FanoutPublisher\FanoutPublisher.csproj", "{472E7689-C28D-48C6-838A-8D19AE4ECBB7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FanoutPublisher", "src\FanoutPublisher\FanoutPublisher.csproj", "{472E7689-C28D-48C6-838A-8D19AE4ECBB7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FanoutConsumer", "FanoutConsumer\FanoutConsumer.csproj", "{A0D851C7-4CEE-4045-A542-38846C496FF2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FanoutConsumer", "src\FanoutConsumer\FanoutConsumer.csproj", "{A0D851C7-4CEE-4045-A542-38846C496FF2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Direct", "Direct", "{2CCE3AF7-EA5F-4A82-B214-9069E10C21C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectConsumer", "DirectConsumer\DirectConsumer.csproj", "{9036AF61-13BB-4A2A-A051-A567713256BD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectConsumer", "src\DirectConsumer\DirectConsumer.csproj", "{9036AF61-13BB-4A2A-A051-A567713256BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectPublisher", "DirectPublisher\DirectPublisher.csproj", "{D5DA85BA-78E5-4BD4-BD84-28EE0AA7D909}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectPublisher", "src\DirectPublisher\DirectPublisher.csproj", "{D5DA85BA-78E5-4BD4-BD84-28EE0AA7D909}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Topic", "Topic", "{39E2D799-CD78-4D98-BB24-7BBC25065070}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopicPublisher", "TopicPublisher\TopicPublisher.csproj", "{08D3036A-0B31-4818-A1FB-AC234AE0CC8E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopicPublisher", "src\TopicPublisher\TopicPublisher.csproj", "{08D3036A-0B31-4818-A1FB-AC234AE0CC8E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopicConsumer", "TopicConsumer\TopicConsumer.csproj", "{C7B9FADD-1BEC-40AE-AF4B-CDBA91F6615B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopicConsumer", "src\TopicConsumer\TopicConsumer.csproj", "{C7B9FADD-1BEC-40AE-AF4B-CDBA91F6615B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BCD2E59D-E22B-4C73-A36E-1B9905144B77}"
 	ProjectSection(SolutionItems) = preProject
@@ -38,9 +38,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{AC5307
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Header", "Header", "{B7A96B2B-D290-4A26-8379-DC534D14817B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeaderConsumer", "HeaderConsumer\HeaderConsumer.csproj", "{9B9288E5-F7B3-4E2C-8D11-7CB26F67E0C7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeaderConsumer", "src\HeaderConsumer\HeaderConsumer.csproj", "{9B9288E5-F7B3-4E2C-8D11-7CB26F67E0C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeaderPublisher", "HeaderPublisher\HeaderPublisher.csproj", "{74CF67C5-A463-4F39-BBA6-E5D539FAE77C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeaderPublisher", "src\HeaderPublisher\HeaderPublisher.csproj", "{74CF67C5-A463-4F39-BBA6-E5D539FAE77C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
