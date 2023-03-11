@@ -2,9 +2,7 @@
 using RabbitMQ.Client.Events;
 using System.Text;
 
-var exchangeName = "ex.fanout";
 var queue1Name = "my.queue1";
-var queue2Name = "my.queue2";
 var routingKey = string.Empty;
 
 var connectionFactory = new ConnectionFactory
